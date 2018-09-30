@@ -1,6 +1,7 @@
 # SeqViews2SeqLabels
 This is the source code for our TIP paper **"SeqViews2SeqLabels: Learning 3D Global Features via Aggregating Sequential Views by RNN with Attention"**
-![http://cgcad.thss.tsinghua.edu.cn/liuyushen/main/small/SeqViews2SeqLabels.png]()
+
+![](http://cgcad.thss.tsinghua.edu.cn/liuyushen/main/small/SeqViews2SeqLabels.png)
 
 ## Requirements
 + python 2.7
@@ -10,7 +11,7 @@ This is the source code for our TIP paper **"SeqViews2SeqLabels: Learning 3D Glo
 + matplotlib 2.0.1
 
 Our code borrowed some code from `tensorflow.contrib.legacy_seq2seq`, but the newer version of tensorflow has moved this package to `tensorflow.contrib.seq2seq`, so to run this code, please make sure 
-your version of tensorflow has this package(we recomend to use 1.0.12 as ours).
+your version of tensorflow has this package(we recommend to use 1.0.12 as ours).
 
 ## Datasets
 + [ModelNet](http://modelnet.cs.princeton.edu/): ModelNet10, ModelNet40
@@ -22,7 +23,7 @@ your version of tensorflow has this package(we recomend to use 1.0.12 as ours).
 + `train.py` train and test SeqViews2SeqLabels model.
 + `seq_rnn_model.py` the SeqViews2SeqLabels model.
 + `model_data.py` read data as required format of model inputs.
-+ `utils` utils for visualization and retrieval.
++ `utils/` utils for visualization and retrieval.
 
 ## Usage
 To run this code, please go with below steps:
@@ -34,15 +35,15 @@ To run this code, please go with below steps:
 	+ modelnet10 train labels, test labels
 	+ modelnet40 train labels, test labels
 	+ shapenet55 train labels, val labels, test labels
-3. Modify the `data_patha` in `run.py`:
-	the paths for each dataset are gived as below:
-	train feature file, train labels file, test feature file, test labels file, result dir for saving the trained model and log, result file for saving test result
+3. Modify the `data_path` in `run.py`:
+	the paths for each dataset are gived as below:<br />
+	`<train feature file>, <train labels file>, <test feature file>, <test labels file>, <result dir for saving the trained model and log>, <result file for saving test result>`
 
 the run command is `python run.py --dataset=<dataset> --train=<train>`, 
 	the options for `dataset` parameter are **modelnet10**, **modelnet40**, **shapenet55**,
 	and for `train` are **True** or **False**
 
-For example, to train on modelnet10, run the command `python run.py --dataset=modelnet10 --train=True`;
+For example, to train on modelnet10, run the command `python run.py --dataset=modelnet10 --train=True`;<br/>
 to test on shapenet55, run the command `python run.py --dataset=shapenet55 --train=False`.
 
 ## Citation

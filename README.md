@@ -40,7 +40,7 @@ To run this code, please go with below steps:
 	`<train feature file>, <train labels file>, <test feature file>, <test labels file>, <result dir for saving the trained model and log>, <result file for saving test result>`
 
 the run command is `python run.py --dataset=<dataset> --train=<train>`, 
-	the options for `dataset` parameter are **modelnet10**, **modelnet40**, **shapenet55**,
+	the options for `dataset` parameter are **modelnet10**, **modelnet40** or **shapenet55**,
 	and for `train` are **True** or **False**
 
 For example, to train on modelnet10, run the command `python run.py --dataset=modelnet10 --train=True`;<br/>

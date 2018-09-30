@@ -27,20 +27,20 @@ your version of tensorflow has this package(we recommend to use 1.0.12 as ours).
 
 ## Usage
 To run this code, please go with below steps:
-1. Extract feature for views of each spilt of dataset with VGG19, the features are numpy matrix with shape  [n_shapes, n_views=12, 4096], in total we need:
+1. Extract feature for views of each spilt of dataset with VGG19, the features are numpy matrix with shape  `[n_shapes, n_views=12, 4096]`, in total we need:
 	+ modelnet10 train feature, test feature
 	+ modelnet40 train feature, test feature
 	+ shapenet55 train feature, val feature, test feature 
-2. Prepare labels as one dimensional numpy array [n_shapes], the order of labels should be corrsponded with the features, in total we need:
+2. Prepare labels as one dimensional numpy array `[n_shapes]`, the order of labels should be corresponding to the view features, in total we need:
 	+ modelnet10 train labels, test labels
 	+ modelnet40 train labels, test labels
 	+ shapenet55 train labels, val labels, test labels
 3. Modify the `data_path` in `run.py`:
-	the paths for each dataset are gived as below:<br />
+	the paths for each dataset are given as below:<br />
 	`<train feature file>, <train labels file>, <test feature file>, <test labels file>, <result dir for saving the trained model and log>, <result file for saving test result>`
 
 the run command is `python run.py --dataset=<dataset> --train=<train>`, 
-	the options for `dataset` parameter are **modelnet10**, **modelnet40**, **shapenet55**,
+	the options for `dataset` parameter are **modelnet10**, **modelnet40** or **shapenet55**,
 	and for `train` are **True** or **False**
 
 For example, to train on modelnet10, run the command `python run.py --dataset=modelnet10 --train=True`;<br/>

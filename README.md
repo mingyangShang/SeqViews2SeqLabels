@@ -53,7 +53,7 @@ If you find this useful, please cite our work as follows:
   title={SeqViews2SeqLabels: Learning 3D Global Features via Aggregating Sequential Views by RNN with Attention},
   author={Zhizhong Han, Mingyang Shang, Zhenbao Liu, Chi-Man Vong, Yu-Shen Liu, Junwei Han, Matthias Zwicker, C.L. Philip Chen},
   journal={IEEE Transactions on Image Processing},
-  year={2018},
+  year={2019, 28(2): 658-672},
   publisher={IEEE}
 }
 ```

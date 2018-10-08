@@ -10,7 +10,7 @@ This is the source code for our TIP paper **"SeqViews2SeqLabels: Learning 3D Glo
 + scipy 0.19.0
 + matplotlib 2.0.1
 
-Our code borrowed some code from `tensorflow.contrib.legacy_seq2seq`, but the newer version of tensorflow has moved this package to `tensorflow.contrib.seq2seq`, so to run this code, please make sure 
+**Note**: Our code borrowed some code from `tensorflow.contrib.legacy_seq2seq`, but the newer version of tensorflow has moved this package to `tensorflow.contrib.seq2seq`, so to run this code, please make sure 
 your version of tensorflow has this package(we recommend to use 1.0.12 as ours).
 
 ## Datasets

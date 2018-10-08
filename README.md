@@ -49,7 +49,7 @@ to test on shapenet55, run the command `python run.py --dataset=shapenet55 --tra
 ## Citation
 If you find this useful, please cite our work as follows:
 ```
-@article{han2018SeqViews2SeqLabels,
+@article{han2019SeqViews2SeqLabels,
   title={SeqViews2SeqLabels: Learning 3D Global Features via Aggregating Sequential Views by RNN with Attention},
   author={Zhizhong Han, Mingyang Shang, Zhenbao Liu, Chi-Man Vong, Yu-Shen Liu, Junwei Han, Matthias Zwicker, C.L. Philip Chen},
   journal={IEEE Transactions on Image Processing},

@@ -14,7 +14,7 @@ def generate_retrival_distance(test_feature_file, train_feature_file, savepath='
 
 def generate_distance_test2test(test_feature_file, savepath='test_test'):
     test_data = np.load(test_feature_file)
-    result = [cosine(test1, test2) for test1 in test_data for test2 in test_data]
+    result = [euclidean(test1, test2) for test1 in test_data for test2 in test_data]
     result = np.reshape(np.array(result), [test_data.shape[0], test_data.shape[0]])
     np.save(savepath, result)
 
